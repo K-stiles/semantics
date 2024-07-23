@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>Latest Post</h2>
+                <time datetime="2024-05-31">May 31, 2024</time>
+            </header>
+            <section>
+                <h3>Introduction to Semantic HTML</h3>
+                <p><em>Semantic HTML</em> is the use of HTML markup to reinforce the meaning of the information in webpages and web applications rather than merely to define its presentation or look. By using semantic tags, we improve the accessibility and SEO of our web pages.</p>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Semantic HTML Example">
+                    <figcaption>An example of semantic HTML structure.</figcaption>
+                </figure>
+                <details>
+                    <summary>Read more about Semantic HTML</summary>
+                    <p>Semantic HTML tags clearly describe their meaning in a human- and machine-readable way. Examples of non-semantic elements: <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> – Tells nothing about its content. Examples of semantic elements: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;article&gt;</code> – Clearly defines its content.</p>
+                </details>
+            </section>
+            <aside>
+                <p>Quick Tip: Use semantic tags to enhance the clarity and readability of your HTML code.</p>
+            </aside>
+            <footer>
+                <p>Posted by <address>John Doe</address></p>
+            </footer>
+        </article>
+
+        <section id="articles">
+            <h2>More Articles</h2>
+            <article>
+                <header>
+                    <h3>Understanding HTML5</h3>
+                    <time datetime="2024-04-30">April 30, 2024</time>
+                </header>
+                <p>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts: it is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful websites and applications.</p>
+                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+                    <p>"HTML5 is designed to be usable by all Open Web developers, whatever their level of experience and knowledge."</p>
+                </blockquote>
+            </article>
+        </section>
+
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our blog! We are passionate about web development and aim to share our knowledge and insights on the latest trends and best practices in the industry. Our mission is to help developers of all levels improve their skills and stay updated with the ever-evolving web technologies.</p>
+            <p>Our team consists of experienced professionals who have worked on a variety of projects, from small websites to large-scale web applications. We believe in the power of the web to connect people and create opportunities, and we are committed to contributing to the web development community.</p>
+            <p>Thank you for visiting our blog. We hope you find our content informative and engaging. Feel free to reach out to us with any questions or feedback.</p>
+        </section>
+
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <address>
+                <p>1234 Main St,<br> Anytown, USA</p>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </address>
+            <form>
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <p>Follow us on <a href="#">Twitter</a>, <a href="#">Facebook</a>, and <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Define CSS variables for colors and common styles */
+:root {
+  --primary-color: #333;
+  --secondary-color: #f4f4f4;
+  --accent-color: #e9e9e9;
+  --text-color: #333;
+  --light-text-color: #666;
+  --header-footer-bg: var(--primary-color);
+  --header-footer-text: #fff;
+  --aside-bg: #f9f9f9;
+  --aside-border: #ccc;
+  --main-bg: #fff;
+  --main-padding: 1em;
+  --margin: 1em;
+  --font-family: Arial, sans-serif;
+  --line-height: 1.6;
+}
+
+/* General styles */
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Header styles */
+header {
+  background: var(--header-footer-bg);
+  color: var(--header-footer-text);
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+nav ul li a {
+  color: var(--header-footer-text);
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  padding: var(--main-padding);
+  background: var(--main-bg);
+  margin: var(--margin);
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+article header {
+  border-bottom: 1px solid var(--aside-border);
+  margin-bottom: 1em;
+}
+
+article header h2 {
+  margin: 0;
+}
+
+article time {
+  display: block;
+  font-size: 0.9em;
+  color: var(--light-text-color);
+}
+
+section h3 {
+  margin-top: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  width: 20%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.8em;
+  color: var(--light-text-color);
+  text-align: center;
+}
+
+details {
+  margin: 1em 0;
+}
+
+aside {
+  background: var(--aside-bg);
+  border-left: 4px solid var(--aside-border);
+  padding: 0.5em;
+  margin: 1em 0;
+}
+
+/* About section styles */
+#about {
+  background: var(--accent-color);
+  padding: var(--main-padding);
+  border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+  background: var(--header-footer-bg);
+  color: var(--header-footer-text);
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+footer a {
+  color: var(--header-footer-text);
+  text-decoration: none;
+}
